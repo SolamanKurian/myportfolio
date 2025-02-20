@@ -21,7 +21,7 @@
 
     <!-- Swiper.js CDN -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
 
 <script>
     var swiper = new Swiper(".mySwiper", {
@@ -264,81 +264,80 @@
 
   
 <!-- ====== Skills Slider Section ====== -->
-<section class="skills-slider bg-white py-1">
+<section class="skills-slider bg-white py-4">
     <div class="container">
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
-                <!-- Skill Item -->
                 <div class="swiper-slide">
                     <div class="skill-item">
                         <img src="assets/icons/html.png" alt="HTML" class="skill-icon">
-                        
+                        <p>HTML</p>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="skill-item">
                         <img src="assets/icons/css.jpg" alt="CSS" class="skill-icon">
-                        
+                        <p>CSS3</p>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="skill-item">
                         <img src="assets/icons/js.png" alt="JavaScript" class="skill-icon">
-                        
+                        <p>JavaScript</p>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="skill-item">
                         <img src="assets/icons/bootstrap.jpg" alt="Bootstrap" class="skill-icon">
-                        
+                        <p>Bootstrap</p>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="skill-item">
                         <img src="assets/icons/react.png" alt="React" class="skill-icon">
-                        
+                        <p>React</p>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="skill-item">
                         <img src="assets/icons/nodejs.png" alt="Node.js" class="skill-icon">
-                        
+                        <p>Node.js</p>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="skill-item">
                         <img src="assets/icons/express.png" alt="Express.js" class="skill-icon">
-                        
+                        <p>Express.js</p>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="skill-item">
                         <img src="assets/icons/mongodb.png" alt="MongoDB" class="skill-icon">
-                        
+                        <p>MongoDB</p>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="skill-item">
                         <img src="assets/icons/tailwind.png" alt="Tailwind CSS" class="skill-icon">
-                        
+                        <p>Tailwind CSS</p>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="skill-item">
                         <img src="assets/icons/figma.png" alt="Figma" class="skill-icon">
-                        
+                        <p>Figma</p>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="skill-item">
                         <img src="assets/icons/photoshop.png" alt="Photoshop" class="skill-icon">
-                        
+                        <p>Photoshop</p>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="skill-item">
                         <img src="assets/icons/typescript.png" alt="TypeScript" class="skill-icon">
-                        
+                        <p>TypeScript</p>
                     </div>
                 </div>
             </div>
@@ -346,6 +345,7 @@
     </div>
 </section>
 <!-- ====== End Skills Slider Section ====== -->
+
 
 
 
@@ -903,11 +903,10 @@
 }
 
 .skill-icon {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     object-fit: contain;
-    margin-bottom: 5px;
-    margin-right: 35px;
+    margin-bottom: 10px;
 }
 
 /* Responsive Styles */
@@ -925,8 +924,39 @@
     }
 }
 
+
     </style>
 
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: "auto",
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+            speed: 800,
+            grabCursor: true,
+            centeredSlides: true,
+            breakpoints: {
+                320: {
+                    slidesPerView: 3,
+                    spaceBetween: 10,
+                },
+                768: {
+                    slidesPerView: 5,
+                    spaceBetween: 20,
+                },
+                1024: {
+                    slidesPerView: 7,
+                    spaceBetween: 30,
+                }
+            }
+        });
+    });
+</script>
 
 
 
@@ -941,6 +971,7 @@
     <script src="assets/js/skill.bar.js"></script>
     <script src="assets/js/fact.counter.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
 </body>
 
