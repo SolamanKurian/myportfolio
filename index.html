@@ -180,6 +180,7 @@
                         <!-- // Social Link -->
                     </div>
                 </div>
+
                 <div class="col-lg-6">
                     <div class="about-content">
                         <h2>Hello, I am <span>Solaman kurian</span></h2>
@@ -236,6 +237,8 @@
                         <!-- //Skill Area -->
                     </div>
                 </div>
+
+                
             </div>
         </div>
     </section>
@@ -734,6 +737,35 @@
         background-color: rgba(248, 208, 10, 0.932)!important;
         color: black !important;
     }
+    .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px; /* Adds space between items */
+    justify-content: center; /* Center align skills */
+}
+
+.skill {
+    background-color: black;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+    min-width: 80px; /* Prevents excessive shrinking */
+}
+
+/* Responsive fix for mobile */
+@media (max-width: 768px) {
+    .skills-container {
+        justify-content: center;
+    }
+
+    .skill {
+        flex: 1 1 45%; /* Makes skills take up about half of the row */
+        text-align: center;
+    }
+}
+
     </style>
 
 
